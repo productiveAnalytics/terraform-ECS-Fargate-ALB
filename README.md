@@ -9,13 +9,13 @@ Step 2:
 terraform init
 
 Step 3:
-terrform plan -var-file="./envs/local_aws.tf"
+terrform plan -var-file="./envs/local_aws.tfvars"
 
 Step 4: Rebuild env
-terrform apply -var-file="./envs/local_aws.tf"
+terrform apply -var-file="./envs/local_aws.tfvars"
 
 Step 5: Burn/Teardown env
-terrform destroy -var-file="./envs/local_aws.tf"
+terrform destroy -var-file="./envs/local_aws.tfvars"
 
 References:
 - https://blog.oxalide.io/post/aws-fargate/
