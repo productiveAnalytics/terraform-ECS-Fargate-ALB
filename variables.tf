@@ -13,7 +13,7 @@ variable "aws_secret_key" {
 
 variable "az_count" {
   description = "Number of AZs to cover in a given AWS region"
-  default     = "2"
+  default     = "3"
 }
 
 variable "app_image" {
@@ -28,7 +28,7 @@ variable "app_port" {
 
 variable "app_count" {
   description = "Number of docker containers to run"
-  default     = 2
+  default     = 3
 }
 
 variable "fargate_cpu" {
