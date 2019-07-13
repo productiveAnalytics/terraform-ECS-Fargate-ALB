@@ -59,11 +59,6 @@ resource "aws_route" "internet_access" {
   destination_cidr_block = "0.0.0.0/0"
   gateway_id             = "${aws_internet_gateway.gw.id}"
 
-  tags = {
-    Name = "route to IGW"
-    Owner = "${var.tag_owner}"
-    Usage = "${var.tag_usage}"
-  }
 }
 
 # Create a NAT gateway with an EIP for each private subnet to get internet connectivity

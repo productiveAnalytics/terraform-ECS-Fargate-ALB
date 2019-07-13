@@ -1,10 +1,14 @@
 variable "aws_region" {
-  description = "The AWS region to create things in."
+  description = "The AWS region to create things in"
   default     = "us-east-1"
 }
 
-variable "aws_account_id" {
-  description = "AWS account ID"
+variable "aws_access_key" {
+  description = "AWS Access Key. e.g. Init as ENV variable TF_VAR_aws_access_key"
+}
+
+variable "aws_secret_key" {
+  description = "AWS Secret Key. e.g. Init as ENV variable TF_VAR_aws_secret_key"
 }
 
 variable "az_count" {
