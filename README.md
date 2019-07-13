@@ -2,8 +2,8 @@
 IaaC using Terraform for ECS-Fargate and Application ELB
 
 Step 1: configure AWS Keys
-export TF_VAR_aws_access_key=<AWS Access key here>
-export TF_VAR_aws_secret_key=<AWS Secret key here>
+export TF_VAR_aws_access_key=<<AWS Access key here>>
+export TF_VAR_aws_secret_key=<<AWS Secret key here>>
 
 Step 2:
 terraform init
